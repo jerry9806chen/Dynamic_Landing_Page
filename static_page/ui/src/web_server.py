@@ -68,7 +68,7 @@ if __name__ == '__main__':
   config.add_route('start', '/')
   config.add_view(server_start, route_name='start')
 
-  config.add_route('home', '/')
+  config.add_route('home', '/home')
   config.add_view(get_home, route_name='home')
 
   config.add_route('sign_up_submit', '/sign_up_submit')
