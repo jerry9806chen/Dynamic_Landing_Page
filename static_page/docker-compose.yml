@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+
+  ui:
+    build:
+      context: ./ui
+    env_file:
+      - ./credentials.env
+    ports:
+      - 80:6000
+    volumes:
+      - ./ui/src:/app
+    container_name: assignment3webserver
+
+  mysql-db:
+    image: mysql:latest
+    restart: always
+    env_file:
+      ./credentials.env
+    ports:
+      - 3306:3306                     # external port : internal mysql port
+    volumes:
+      - ./persist_db:/var/lib/mysql   # persist when container is stopped!
+    container_name: assignment3webdb
+
+volumes:
+  persist_db:

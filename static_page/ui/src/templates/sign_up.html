@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Sign Up! | Chatbot Inc.</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <img action="/home" class="logo" src="chatbot_inc_logo.png" alt="Chatbot Inc. Logo">
+      <p class="header1">CHATBOT INC.</p>
+      <p class="subheader1">Giving you a virtual buddy since the 2019-2020 COVID-19 pandemic!</p>
+      <div class="topnav-container" style="margin-bottom:35px">
+         <div class="topnav">
+            <a action="/home" class="wasactive" href="#home">Home</a>
+            <a action="/product_features" href="#productfeatures">Product Features</a>
+            <a action="/about_us" href="#about">About Us</a>
+            <a action="/pricing" href="#pricing">Pricing</a>
+            <a action="/sign_up" href="#signup">Sign Up</a>
+         </div>
+      </div>
+
+      <section>
+      <aside style="width:49%; display:inline-block;">
+      <div style="text-align:center;">
+         <form action="/sign_up_submit" method="POST">
+            <h1 style="font-family:Raleway;font-size:30pt;">SIGN UP FOR OUR<br>NEWSLETTER!</h1>
+  
+            <input type="text" style="font-size:12pt;width:500px;height:55px;margin-bottom:15px" placeholder="   Name" name="user" required>
+            <br> 
+            <input type="text" style="font-size:12pt;width:500px;height:55px;margin-bottom:15px" placeholder="   Email" name="email" required>
+            <br>
+            <input type="text" style="font-size:12pt;width:500px;height:55px;margin-bottom:15px" placeholder="   Phone" name="phone">
+            <br>
+            <button class="submit" type="submit">Submit</button>
+         </form>
+      </div>
+      </aside>
+      <aside style="width:49%; display:inline-block;">
+         <div style='text-align:right'>
+            <img class="signup_pic" src="signup_pic.png">
+         </div>
+      </aside>
+      </section>
+
+      <p class="footer">©2020 by Chatbot Inc. Proudly created with HTML and CSS.</p>
+   </body>
+</html>
